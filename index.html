@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Adrian</title>
+    <!-- Menggunakan Tailwind CSS via CDN untuk kemudahan sebelum di-hosting -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Efek transisi kustom untuk interaktivitas */
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <!-- Navbar (Sticky & Interactive) -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent text-white p-5">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="#beranda" class="text-2xl font-bold tracking-tighter">Adrian.</a>
+            <ul class="hidden md:flex space-x-8 font-medium">
+                <li><a href="#beranda" class="hover:text-blue-400 transition-colors">Beranda</a></li>
+                <li><a href="#tentang" class="hover:text-blue-400 transition-colors">Tentang</a></li>
+                <li><a href="#portofolio" class="hover:text-blue-400 transition-colors">Proyek</a></li>
+                <li><a href="#kontak" class="hover:text-blue-400 transition-colors">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section: Beranda (Hero) -->
+    <section id="beranda" class="min-h-screen flex items-center justify-center bg-gray-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-900 to-gray-900 opacity-90"></div>
+        <div class="relative z-10 text-center px-4 fade-in">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4">Halo, Saya <span class="text-blue-500">Adrian</span></h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8">Mahasiswa Teknik Informatika & Full-Stack Web Developer</p>
+            <a href="#portofolio" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg">
+                Lihat Karya Saya
+            </a>
+        </div>
+    </section>
+
+    <!-- Section: Tentang -->
+    <section id="tentang" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-5 text-center">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800">Tentang Saya</h2>
+            <div class="w-16 h-1 bg-blue-500 mx-auto mb-8"></div>
+            <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                Saya adalah seorang pengembang perangkat lunak yang berfokus pada pengembangan web full-stack. Memiliki ketertarikan mendalam pada arsitektur database, Object-Oriented Programming (OOP), dan Software Quality Assurance. Saya selalu berusaha menulis kode yang bersih, efisien, dan mudah di-maintain.
+            </p>
+            <div class="flex justify-center flex-wrap gap-3 mt-8">
+                <span class="bg-gray-100 px-4 py-2 rounded-full text-sm font-semibold text-gray-700 shadow-sm border">PHP</span>
+                <span class="bg-gray-100 px-4 py-2 rounded-full text-sm font-semibold text-gray-700 shadow-sm border">MySQL</span>
+                <span class="bg-gray-100 px-4 py-2 rounded-full text-sm font-semibold text-gray-700 shadow-sm border">Tailwind CSS</span>
+                <span class="bg-gray-100 px-4 py-2 rounded-full text-sm font-semibold text-gray-700 shadow-sm border">Java</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Portofolio (Proyek) -->
+    <section id="portofolio" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-5">
+            <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">Proyek Unggulan</h2>
+            <div class="w-16 h-1 bg-blue-500 mx-auto mb-12"></div>
+            
+            <!-- Grid Card Interaktif -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="h-48 bg-gray-300 flex items-center justify-center text-gray-500 group-hover:bg-blue-100 transition-colors">
+                        <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Sistem Manajemen Perpustakaan</h3>
+                        <p class="text-gray-600 text-sm mb-4">Sistem informasi berbasis web yang dirancang khusus untuk mengelola data buku, peminjaman, dan operasional staf administrator serta pustakawan.</p>
+                        <span class="text-xs font-bold text-blue-600">PHP • MySQL</span>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="h-48 bg-gray-300 flex items-center justify-center text-gray-500 group-hover:bg-blue-100 transition-colors">
+                        <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Sistem Inventory Barang</h3>
+                        <p class="text-gray-600 text-sm mb-4">Aplikasi manajemen stok barang yang dikembangkan selama masa kerja praktek (internship) untuk memonitor keluar masuknya aset perusahaan.</p>
+                        <span class="text-xs font-bold text-blue-600">Web Developer</span>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="h-48 bg-gray-300 flex items-center justify-center text-gray-500 group-hover:bg-blue-100 transition-colors">
+                        <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Sistem Penggajian (Payroli)</h3>
+                        <p class="text-gray-600 text-sm mb-4">Aplikasi penggajian karyawan yang dibangun menggunakan prinsip Object-Oriented Programming (OOP) lengkap dengan fitur cetak slip gaji.</p>
+                        <span class="text-xs font-bold text-blue-600">OOP PHP • MySQL</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Kontak -->
+    <section id="kontak" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-5 text-center">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800">Mari Berkolaborasi</h2>
+            <div class="w-16 h-1 bg-blue-500 mx-auto mb-8"></div>
+            <p class="text-lg text-gray-600 mb-8">Apakah Anda memiliki proyek atau ide yang ingin diwujudkan? Jangan ragu untuk menghubungi saya.</p>
+            <a href="mailto:emailanda@example.com" class="inline-block bg-gray-900 hover:bg-black text-white font-semibold py-3 px-10 rounded-lg shadow-md transition-colors">
+                Kirim Email
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-6 text-center">
+        <p>&copy; 2026 Adrian. Dibuat dengan presisi dan logika.</p>
+    </footer>
+
+    <!-- Script untuk Interaktivitas Navbar -->
+    <script>
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                // Ketika di-scroll ke bawah, navbar menjadi putih dengan bayangan
+                navbar.classList.add('bg-white', 'shadow-md', 'text-gray-800');
+                navbar.classList.remove('bg-transparent', 'text-white');
+            } else {
+                // Ketika di posisi atas, navbar kembali transparan
+                navbar.classList.add('bg-transparent', 'text-white');
+                navbar.classList.remove('bg-white', 'shadow-md', 'text-gray-800');
+            }
+        });
+    </script>
+</body>
+</html>
